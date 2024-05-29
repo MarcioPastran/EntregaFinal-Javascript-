@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NiceSkin</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/maroon-3d-letra-n-acabado-rojo-foto-stock_899449-393443.jpg"
+    />
+    <script src="app/script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="text-center">
+      <!-- titulo -->
+      <h1 class="text-red-600 backdrop-blur-xl font-semibold text-3xl">
+        !Welcome to the NiceSkin¡
+      </h1>
+      <!-- boton cart -->
+      <button class="absolute right-3 top-2 px-4" id="cart-shopp">
+        <i
+          class="fa-solid fa-cart-shopping text-red-600 hover:text-red-700"
+        ></i>
+      </button>
+      <!-- contenedor principal de cart -->
+      <section
+        id="cart"
+        class="cart z-50 absolute right-3 backdrop-blur-xl border-2 border-red-600 rounded p-4 mt-2 text-center hidden"
+      >
+        <h2 class="text-xl text-red-600 font-bold">Cart</h2>
+        <!-- contenedor de productos -->
+        <div id="cart-content" class="space-y-4 p-2"></div>
+        <div>
+          <!-- boton comprar -->
+          <button
+            id="buy-btn"
+            class="rounded-full border-2 text-red-600 hover:text-white hover:bg-red-600 border-red-600 p-2"
+          >
+            BUY
+          </button>
+          <!-- boton eliminar -->
+          <button
+            id="clear-btn"
+            class="rounded-full border-2 text-red-600 hover:text-white hover:bg-red-600 border-red-600 p-2"
+          >
+            <i class="fa-regular fa-trash-can"></i>
+          </button>
+        </div>
+      </section>
+      <!-- botones de filtracion productos -->
+      <ul class="flex text-white justify-center font-semibold uppercase">
+        <li
+          class="m-3 bg-red-700 cursor-pointer rounded-xl p-2 hover:bg-red-600"
+          id="all"
+        >
+          All
+        </li>
+        <li
+          class="m-3 bg-red-700 cursor-pointer rounded-xl p-2 hover:bg-red-600"
+          id="coat"
+        >
+          coat
+        </li>
+        <li
+          class="m-3 bg-red-700 cursor-pointer rounded-xl p-2 hover:bg-red-600"
+          id="feet"
+        >
+          feet
+        </li>
+        <li
+          class="m-3 bg-red-700 cursor-pointer rounded-xl p-2 hover:bg-red-600"
+          id="trousers"
+        >
+          trousers
+        </li>
+      </ul>
+    </header>
+    <!-- contenedor de productos pricipal -->
+    <section
+      id="contenedor"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+    ></section>
+  </body>
+</html>
